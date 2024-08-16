@@ -1,0 +1,10 @@
+{
+    "name": "admin/prim-prj-php_com_composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Admin\\PrimPrjPhpComComposer\\": "src/"
+        }
+    },
+    "require": {}
+}

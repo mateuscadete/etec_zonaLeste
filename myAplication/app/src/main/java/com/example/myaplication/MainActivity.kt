@@ -1,0 +1,48 @@
+package com.example.myaplication
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.myaplication.ui.theme.MyAplicationTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Column {
+                Greeting("25kg Arroz")
+                Greeting("5kg feijao")
+                Greeting("3kg carne moida")
+                Greeting("1 dúzia de banana prata")
+                Greeting("8 maçãs")
+                Greeting("3 pacotes de macarrao")
+                Greeting("5 detergentes")
+                Greeting("2 pacotes de papel higienico")
+            }
+        }
+    }
+}
+
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    MyAplicationTheme {
+        Greeting("Android")
+    }
+}

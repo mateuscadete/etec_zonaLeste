@@ -1,0 +1,9 @@
+{
+    "name": "admin/prj_local",
+    "autoload": {
+        "psr-4": {
+            "Admin\\PrjLocal\\": "src/"
+        }
+    },
+    "require": {}
+}

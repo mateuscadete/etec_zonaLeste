@@ -1,6 +1,5 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+1 Crie um assistente administrativo e um técnico. Imprima o número de matrícula e o nome de cada um deles.
  */
 package com.mycompany.prj27082024;
 import com.mycompany.prj27082024.Pessoa;

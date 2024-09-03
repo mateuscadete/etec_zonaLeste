@@ -14,14 +14,13 @@ import javax.swing.JOptionPane;
 //Classe Usuário
 abstract class Usuario {
     //Atributos
-    private String nome;
     private Integer ingresso;
     
     //Construtor
-    public Usuario(String nome, Integer ingresso){
-        this.nome = nome;
+    public Usuario(Integer ingresso){
         this.ingresso = ingresso;
     }
+    
     
     //Função para mostrar o valor do ingresso
     public void mostra_ingresso(){
@@ -29,7 +28,8 @@ abstract class Usuario {
     }
     
     //Função que verifica se o ingresso é normal ou VIP
-    public void func_ingresso(int n){
+    public void func_ingresso(){
+        int n;
             n = Integer.parseInt(JOptionPane.showInputDialog("\n Parabéns, você é VIP! \n \n"
                 + "Digite uma opção abaixo para escolher o camarote: \n"
                 + "1 - Camarote superior"

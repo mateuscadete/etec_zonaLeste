@@ -12,11 +12,12 @@ import javax.swing.JOptionPane;
 public class main {
     public static void main(String args[]){
     int n;
-    int n2 = 0;
 
     n  = Integer.parseInt(JOptionPane.showInputDialog("Digite uma opção abaixo para escolher o tipo de ingresso: \n"
             + "1 - Ingresso normal."
             + "\n 2 - Ingresso VIP"));
+    
+    Usuario_normal p1 = new Usuario_normal(n); 
 
     switch (n) {
         case 1:
@@ -28,7 +29,7 @@ public class main {
                 + "1 - Camarote superior"
                 + "2 - Camarote inferior"); 
             
-            switch(n2){
+            switch(n){
                 case 1:
                     JOptionPane.showMessageDialog(null, "Você escolheu o camarote superior");
                     break;

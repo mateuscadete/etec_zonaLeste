@@ -1,0 +1,10 @@
+{
+    "name": "mateu/tela_login",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}

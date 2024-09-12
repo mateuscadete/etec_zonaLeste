@@ -26,8 +26,8 @@
             use App\model\Pessoa;
 
             //Declara as variáveis que armazenarão o conteúdo nome e senha
-            $nome = $_GET('nome');
-            $senha = $_GET('senha');
+            $nome = $_POST['nome'];
+            $senha = $_POST['senha'];
             
             //Condição que verifica se o formulário foi enviado
             if($_SERVER['REQUEST_METHOD'] = "POST"){

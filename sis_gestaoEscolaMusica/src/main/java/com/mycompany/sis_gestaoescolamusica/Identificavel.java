@@ -9,5 +9,5 @@ package com.mycompany.sis_gestaoescolamusica;
  * @author Admin
  */
 public interface Identificavel{
-    int getId();
+    String getId();
 }

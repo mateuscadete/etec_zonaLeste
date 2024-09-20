@@ -9,15 +9,15 @@ package com.mycompany.sis_gestaoescolamusica;
  * @author Admin
  */
 public class Aluno extends Pessoa implements Identificavel{
-    int matricula;
+    String matricula;
 
-    public Aluno(int matricula, String nome, int idade) {
+    public Aluno(String matricula, String nome, String idade) {
         super(nome, idade);
         this.matricula = matricula;
     }
 
     @Override
-    public int getId() {
+    public String getId() {
         return this.matricula;
     }
 

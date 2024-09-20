@@ -11,7 +11,7 @@ package com.mycompany.sis_gestaoescolamusica;
 public class Funcionario extends Pessoa implements Identificavel{
     int cracha;
 
-    public Funcionario(int cracha, String nome, int idade) {
+    public Funcionario(int cracha, String nome, String idade) {
         super(nome, idade);
         this.cracha = cracha;
     }

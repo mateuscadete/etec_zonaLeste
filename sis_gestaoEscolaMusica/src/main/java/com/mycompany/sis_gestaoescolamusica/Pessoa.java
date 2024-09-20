@@ -9,14 +9,17 @@ package com.mycompany.sis_gestaoescolamusica;
  * @author Admin
  */
 abstract class Pessoa {
+    //Atributos
     String nome;
-    int idade;
+    String idade;
 
-    public Pessoa(String nome, int idade) {
+    //Construtor
+    public Pessoa(String nome, String idade) {
         this.nome = nome;
         this.idade = idade;
     }
 
+    //Método
     public void atividade(){};
        
 }

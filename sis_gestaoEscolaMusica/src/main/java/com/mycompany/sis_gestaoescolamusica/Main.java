@@ -16,7 +16,7 @@ public class Main {
         String[] Vetor = new String[3];
 
         // Opção digitada pelo usuário
-        int opc = 0;
+        int opc = 3;
 
         // Iniciando a função scanner para capturar valores pelo terminal
         Scanner scanner = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Escolha a opcao desejada: "
                     + "1- Cadastrar aluno. \n"
                     + "2 - Cadastrar professor.  \n"
-                    + "3 - Cadastrar funcionário. \n"
+                    + "3 - Cadastrar funcionario. \n"
                     + "0 - Para sair do programa");
 
             opc = scanner.nextInt();

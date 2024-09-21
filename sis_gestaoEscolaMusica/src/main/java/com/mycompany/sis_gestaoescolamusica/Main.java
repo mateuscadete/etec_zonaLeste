@@ -24,7 +24,7 @@ public class Main {
         // Enquanto opc diferente de 0, o usuário pode escolher uma classe para atribuir
         // conteúdo
         while (opc != 0) {
-            System.out.println("Escolha a opcao desejada: "
+            System.out.println("Escolha a opcao desejada: \n"
                     + "1- Cadastrar aluno. \n"
                     + "2 - Cadastrar professor.  \n"
                     + "3 - Cadastrar funcionario. \n"

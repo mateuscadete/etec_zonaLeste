@@ -16,7 +16,7 @@ public class Main {
         String[] Vetor = new String[3];
 
         // Opção digitada pelo usuário
-        int opc = 3;
+        int opc = 4;
 
         // Iniciando a função scanner para capturar valores pelo terminal
         Scanner scanner = new Scanner(System.in);

@@ -9,15 +9,15 @@ package com.mycompany.sis_gestaoescolamusica;
  * @author Admin
  */
 public class Funcionario extends Pessoa implements Identificavel{
-    int cracha;
+    String cracha;
 
-    public Funcionario(int cracha, String nome, String idade) {
+    public Funcionario(String cracha, String nome, String idade) {
         super(nome, idade);
         this.cracha = cracha;
     }
       
     @Override
-    public int getId() {
+    public String getId() {
         return this.cracha;
     }
 

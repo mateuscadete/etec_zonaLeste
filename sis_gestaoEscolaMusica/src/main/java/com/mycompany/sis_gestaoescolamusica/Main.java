@@ -13,27 +13,32 @@ import java.util.Scanner;
 public class Main {
     public static void main(String args[]){
         //Criando o vetor para armazenar os dados
-        String[] pessoa = new String[3];
+        String[] Vetor = new String[3];
 
         Scanner scanner = new Scanner(System.in);
 
-        Aluno a1 = new Aluno(pessoa[0], pessoa[1], pessoa[2]);
+        Aluno a1 = new Aluno(Vetor[0], Vetor[1], Vetor[2]);
 
         System.out.println("Digite a matricula, nome e idade do aluno: ");
         
         a1.matricula = scanner.nextLine();
         a1.nome = scanner.nextLine();
         a1.idade = scanner.nextLine();
-
-
-
+        
+        Vetor[0] = a1.matricula;
+        Vetor[1] = a1.nome;
+        Vetor[2] = a1.idade;
+        
+        motraValores(Vetor);
+        
+        
+        
     }
 
-    public static String v[] (String v[]) {
-        for(i=0; i<3; i++){
-            v[i] = v[];
-
+        public static String[] motraValores(String[] v){
+        for(int i=0; i<3; i++){
+            System.out.println(v[i]);
         }
-        return v[];
+        return v;
     }
 }

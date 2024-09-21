@@ -9,9 +9,9 @@ package com.mycompany.sis_gestaoescolamusica;
  * @author Admin
  */
 public class Professor extends Pessoa implements Identificavel{
-    int registro_funcional;
+    String registro_funcional;
 
-    public Professor(int registro_funcional, String nome, int idade) {
+    public Professor(String registro_funcional, String nome, String idade) {
         super(nome, idade);
         this.registro_funcional = registro_funcional;
     }
@@ -22,7 +22,7 @@ public class Professor extends Pessoa implements Identificavel{
     }
 
     @Override
-    public int getId() {
+    public String getId() {
        return this.registro_funcional;
     }
     

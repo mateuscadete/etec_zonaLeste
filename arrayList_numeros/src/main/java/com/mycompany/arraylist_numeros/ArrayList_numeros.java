@@ -20,7 +20,8 @@ public class ArrayList_numeros {
         numeros.add(3);
         numeros.add(4);
         numeros.add(5);
-     
+
+        // Compara se o número do arrayList é par ou não, caso par conta a exibe o número e mostra a quantidade
         for (Integer numero : numeros) {
             if(numero % 2  == 0){
                 epar = epar + 1;

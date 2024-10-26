@@ -1,6 +1,7 @@
 package com.mycompany.arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -15,31 +16,37 @@ public class exercício {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> cities = new ArrayList<String>();
+        ArrayList<String> frutas = new ArrayList<String>();
         
         // Adicionando frutas ao ArrayList
-        cities.add("Banana");
-        cities.add("Laranja");
-        cities.add("Mexerica");
-        cities.add("Melão");
-        cities.add("Uva");
+        frutas.add("Banana");
+        frutas.add("Laranja");
+        frutas.add("Mexerica");
+        frutas.add("Melão");
+        frutas.add("Uva");
         
         // Exibindo a lista de frutas
-        System.out.println("Lista de frutas: " + cities);
+        System.out.println("Lista de frutas: " + frutas);
         
         // Removendo uma fruta
-        cities.remove(1);
-        System.out.println("Lista de frutas após remoção: " + cities);
+        frutas.remove(1);
+        System.out.println("Lista de frutas após remoção: " + frutas);
 
         // Pedindo ao usuário para digitar a fruta que deseja buscar
         System.out.print("Digite o nome da fruta que deseja buscar: ");
         String frutaBuscada = scanner.nextLine();
 
         // Chamando o método de busca
-        if (buscarFruta(cities, frutaBuscada)) {
+        if (buscarFruta(frutas, frutaBuscada)) {
             System.out.println("A fruta " + frutaBuscada + " está na lista.");
         } else {
             System.out.println("A fruta " + frutaBuscada + " não está na lista.");
+        }
+
+        Collections.sort(frutas);
+
+        for (String nome : frutas) {
+            System.out.println(nome);
         }
 
         scanner.close();

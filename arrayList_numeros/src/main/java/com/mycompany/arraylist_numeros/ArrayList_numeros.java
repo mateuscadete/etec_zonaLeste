@@ -20,15 +20,18 @@ public class ArrayList_numeros {
         numeros.add(3);
         numeros.add(4);
         numeros.add(5);
-
-        // Compara se o número do arrayList é par ou não, caso par conta a exibe o número e mostra a quantidade
+     
+        // Verifica se o número é par ou não, caso par conta para o contador e exibe o número
         for (Integer numero : numeros) {
             if(numero % 2  == 0){
                 epar = epar + 1;
                 System.out.println("\n" + numero);
-                System.out.println("\n" + epar);
+                
             }
         }
+        
+        // Exibe a quantidade de números pares
+        System.out.println("\n" + epar);
         
     }
 }

@@ -43,8 +43,10 @@ public class exercício {
             System.out.println("A fruta " + frutaBuscada + " não está na lista.");
         }
 
+        // Ordenando o ArrayList
         Collections.sort(frutas);
 
+        // Exibindo seu conteúdo
         for (String nome : frutas) {
             System.out.println(nome);
         }

@@ -17,7 +17,7 @@
 
                 <!-- Nome -->
                 <div class="col-md-12">
-                    <label for="name" class="form-label">Nome</label>
+                    <label for="name" class="form-label">Nome:</label>
                     <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Nome completo" value="{{ old('name') }}">
                     @error('name')
                         <div class="invalid-feedback">{{ $message }}</div>
@@ -26,7 +26,7 @@
 
                 <!-- E-mail -->
                 <div class="col-md-6">
-                    <label for="email" class="form-label">E-mail</label>
+                    <label for="email" class="form-label">E-mail:</label>
                     <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Melhor e-mail do usuário" value="{{ old('email') }}">
                     @error('email')
                         <div class="invalid-feedback">{{ $message }}</div>
@@ -35,7 +35,7 @@
 
                 <!-- Senha -->
                 <div class="col-md-6">
-                    <label for="password" class="form-label">Senha</label>
+                    <label for="password" class="form-label">Senha:</label>
                     <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Senha com no mínimo 6 caracteres">
                     @error('password')
                         <div class="invalid-feedback">{{ $message }}</div>
